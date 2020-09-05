@@ -5,14 +5,55 @@
     Description:
 */
 .footer {
-  background-color: #f1f1f1;
-  color: #9a9a9a;
+  background: rgb(142, 241, 246);
+  background: linear-gradient(0deg, rgba(142, 241, 246, 1) 0%, rgba(193, 249, 251, 1) 100%);
+  color: $text-color;
   font-size: 11px;
-  padding: 15px 0;
+  padding: 35px 0;
 
-  .goplek-logo {
+  .logo {
     display: block;
-    margin-left: auto;
-    width: 50px;
+    margin: 0 auto 15px;
+    max-width: 135px;
   }
+
+  .social {
+    list-style: none;
+    margin: 0 0;
+    padding: 0 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 0 15px;
+      width: 25px;
+    }
+
+    a {
+      background: no-repeat center center;
+      background-size: auto 23px;
+      display: block;
+      height: 25px;
+      text-indent: -99999em;
+      width: 25px;
+
+      &.facebook { background-image: url(../images/icon-facebook.svg); }
+      &.instagram { background-image: url(../images/icon-instagram.svg); }
+    }
+  }
+
+  .copyright {
+    margin-top: 17px;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .footer {
+    .copyright {
+      text-align: center;
+    }
+  }
+
 }

@@ -4,9 +4,56 @@
     Author     : cesarmejia
     Description:
 */
+
+@font-face {
+  font-family: 'Heavitas';
+  src: url('../fonts/Heavitas.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Heavitas.woff') format('woff'),
+       url('../fonts/Heavitas.ttf') format('truetype'), 
+       url('../fonts/Heavitas.svg#Heavitas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Medium';
+  src: url('../fonts/AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/AvenirLTStd-Medium.otf') format('opentype'),
+       url('../fonts/AvenirLTStd-Medium.woff') format('woff'), 
+       url('../fonts/AvenirLTStd-Medium.ttf') format('truetype'), 
+       url('../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url('../fonts/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/AvenirLTStd-Book.otf') format('opentype'),
+       url('../fonts/AvenirLTStd-Book.woff') format('woff'), 
+       url('../fonts/AvenirLTStd-Book.ttf') format('truetype'), 
+       url('../fonts/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Heavy';
+  src: url('../fonts/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/AvenirLTStd-Heavy.otf') format('opentype'),
+       url('../fonts/AvenirLTStd-Heavy.woff') format('woff'), 
+       url('../fonts/AvenirLTStd-Heavy.ttf') format('truetype'), 
+       url('../fonts/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$text-color: #545454;
+$font-regular: 'AvenirLTStd-Book', sans-serif;
+
 body {
-  color: #333;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: $text-color;
+  font-family: $font-regular;
   font-size: 14px;
 
   -webkit-font-smoothing: antialiased;
