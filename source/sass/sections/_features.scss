@@ -1,0 +1,76 @@
+/*
+    Document   : _features.scss
+    Created on : 10/06/2019, 22:49:15 PM
+    Author     : cesarmejia
+    Description:
+*/
+.features {
+  .row {
+    display: flex;
+  }
+
+  .col-sm-4 {
+    border-right: 1px solid #068f95;
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .feature {
+    padding: 25px 5px;
+  }
+
+  .feature-heading {
+    margin: 0 auto 30px;
+    max-width: 255px;
+    text-align: center;
+
+    h2 {
+      color: #3241f0;
+      font-family: $font-highlight;
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+
+  .feature-body {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    .row {
+      flex-direction: column;
+    }
+
+    .col-sm-4 {
+      border-right: none;
+    }
+
+    .feature {
+      margin-bottom: 40px;
+      min-height: auto;
+      padding: 0 0;
+    }
+
+    .feature-heading {
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features {
+    .feature-heading {
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    .feature-body {
+      font-size: 15px;
+    }
+  }
+}
