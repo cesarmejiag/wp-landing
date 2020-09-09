@@ -52,6 +52,7 @@ $text-color: #545454;
 $highlight-color: #FF0024;
 
 $font-highlight: 'Heavitas', sans-serif;
+$font-bold: 'AvenirLTStd-Heavy', sans-serif;
 $font-medium: 'AvenirLTStd-Medium', sans-serif;
 $font-regular: 'AvenirLTStd-Book', sans-serif;
 
@@ -85,7 +86,9 @@ body {
 
 /* Outer wrapper */
 .outer-wrapper {
-  margin-top: 75px;
+  background-color: #fff;
+  margin-top: 700px;
+  margin-top: 95vh;
   position: relative;
 }
 
@@ -120,5 +123,8 @@ body {
 @import "components/contact-form";
 @import "components/footer";
 
+@import "sections/cover";
+@import "sections/intro";
 @import "sections/features";
+@import "sections/download";
 @import "sections/contact";

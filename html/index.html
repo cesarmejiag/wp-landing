@@ -78,29 +78,26 @@
         
     </head>
     <body>
+        <!-- Block Loader -->
+        <div class="loader"></div>
+        <!-- /.Loader -->
+
+        <!-- Block Cover -->
+        <section class="block cover" id="home"></section>
+        <!-- /.Cover -->
 
         <!-- Outer wrapper -->
         <div class="outer-wrapper">
-
-            <!-- Block Cover -->
-            <section class="block cover" id="home">
-                <div class="holder">
-                    <div class="container-fluid">
-                        <div class="header"></div>
-                        <div class="content">
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /.Cover -->
-
             <!-- Block Intro -->
             <section class="block intro" id="intro">
                 <div class="holder">
                     <div class="container-fluid">
+                        <div class="parallax-image">
+                            <img class="img-responsive" src="design/images/intro-iphone.png" alt="iPhone Wiskipix">
+                        </div>
+                        
                         <div class="header">
-                            <h1>Imprimiendo recuerdos</h1>
+                            <h1 class="hightlight-text">Imprimiendo recuerdos</h1>
                             <div>Las fotos en papel son un recuerdo para toda la vida.</div>
                             <div>Te ayudamos a conservar esos momentos imprimiendo tus fotos.</div>
                         </div>
@@ -184,9 +181,15 @@
                                 </div>
                                 <div class="content">
                                     <div>Para empezar a poner poner esos momentos en papel</div>
-                                    <div>
-                                        <img src="" alt="AppStore Icono">
-                                        <img src="" alt="Google Play Icono">
+                                    <div class="stores">
+                                        <div class="store">
+                                            <img src="design/images/icon-apple-store.svg" alt="AppStore Icono">
+                                            <div class="ribbon"><img src="design/images/download-ribbon.svg" alt="Próximamente"></div>
+                                        </div>
+                                        <div class="store">
+                                            <img src="design/images/icon-play-store.svg" alt="Google Play Icono">
+                                            <div class="ribbon"><img src="design/images/download-ribbon.svg" alt="Próximamente"></div>
+                                        </div>
                                     </div>
                                 </div>  
                             </div>
@@ -206,12 +209,12 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="input-container">
-                                            <input name="Nombre" placeholder="Nombre" type="text">
+                                            <input name="Nombre" placeholder="Nombre" type="text" autocomplete="off">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="input-container">
-                                            <input name="Email" placeholder="Email" type="text">
+                                            <input name="Email" placeholder="Email" type="text" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>

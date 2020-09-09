@@ -1,0 +1,52 @@
+/*
+    Document   : _download.scss
+    Created on : 10/06/2019, 22:49:15 PM
+    Author     : cesarmejia
+    Description:
+*/
+.download {
+  .header {
+    h1 {
+      color: #26d5dc;
+      font-family: $font-highlight;
+      font-size: 33px;
+      line-height: 128%;
+      margin: 0;
+    }
+  }
+
+  .content {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .stores {
+    display: flex;
+    margin-top: 30px;
+
+    .store {
+      margin-left: 25px;
+      max-width: 195px;
+      position: relative;
+      width: 45%;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    img {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+
+    .ribbon {
+      background: no-repeat center center url(../images/download-ribbon.svg);
+      height: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 55%;
+    }
+  }
+}

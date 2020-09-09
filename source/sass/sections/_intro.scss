@@ -1,0 +1,74 @@
+/*
+    Document   : _intro.scss
+    Created on : 10/06/2019, 22:49:15 PM
+    Author     : cesarmejia
+    Description:
+*/
+.intro {
+  position: relative;
+  z-index: 0;
+  
+  .parallax-image {
+    left: 50%;
+    max-width: 675px;
+    position: absolute;
+    top: 12%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -1;
+  }
+
+  .header {
+    color: $highlight-color;
+    font-family: $font-bold;
+    font-size: 27px;
+    line-height: 135%;
+    margin-top: 225px;
+    text-align: center;
+
+    h1 {
+      font-size: 48px;
+    }
+  }
+
+  .content {
+    font-family: $font-medium;
+    font-size: 27px;
+    line-height: 135%;
+    margin: 0 auto;
+    max-width: 555px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro {
+    .header {
+      font-size: 22px;
+  
+      h1 {
+        font-size: 38px;
+      }
+    }
+  
+    .content {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    .header {
+      font-size: 18px;
+  
+      h1 {
+        font-size: 30px;
+      }
+    }
+  
+    .content {
+      font-size: 18px;
+    }
+  }
+}
