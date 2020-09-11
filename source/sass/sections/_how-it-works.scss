@@ -7,6 +7,7 @@
 .how-it-works {
   background: rgb(142, 241, 246);
   background: linear-gradient(0deg, rgba(142, 241, 246, 1) 0%, rgba(193, 249, 251, 1) 100%);
+  position: relative;
 
   .header {
     text-align: center;
@@ -39,5 +40,24 @@
       font-size: 27px;
       margin: 0 0;
     }
+  }
+
+  .decoration {
+    position: absolute;
+  }
+
+  .decoration-1 {
+    right: 5%;
+    top: -28%;
+  }
+
+  .decoration-2 {
+    left: 35%;
+    top: 50%;
+  }
+
+  .decoration-3 {
+    left: 0%;
+    top: 0%;
   }
 }

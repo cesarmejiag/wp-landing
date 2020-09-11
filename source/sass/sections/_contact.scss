@@ -5,6 +5,7 @@
     Description:
 */
 .contact {
+  position: relative;
   & > .holder {
     max-width: 675px;
   }
@@ -40,6 +41,20 @@
       font-family: $font-medium;
       font-size: 28px;
     }
+  }
+
+  .decoration {
+    position: absolute;
+  }
+
+  .decoration-1 {
+    right: 0;
+    top: 20%;
+  }
+
+  .decoration-2 {
+    left: 7%;
+    top: 11%;
   }
 }
 

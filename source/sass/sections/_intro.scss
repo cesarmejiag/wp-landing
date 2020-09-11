@@ -51,6 +51,20 @@
     max-width: 555px;
     text-align: center;
   }
+
+  .decoration {
+    position: absolute;
+  }
+
+  .decoration-1 {
+    left: 0;
+    top: 20%;
+  }
+
+  .decoration-2 {
+    right: 0;
+    top: 71%;
+  }
 }
 
 @media screen and (max-width: 767px) {
