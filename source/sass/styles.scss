@@ -84,11 +84,27 @@ body {
   width: 100%;
 }
 
+/* Loader */
+.loader {
+  background-color: #fff;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 575ms;
+  width: 100%;
+  z-index: 99;
+  &.loader-visible {
+    opacity: 1;
+  }
+}
+
 /* Outer wrapper */
 .outer-wrapper {
   background-color: #fff;
   margin-top: 700px;
-  margin-top: 95vh;
+  margin-top: 85vh;
   position: relative;
 }
 
@@ -111,12 +127,20 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .outer-wrapper {
+    margin-top: 65vh;
+  }
+}
+
 @media screen and (max-width: 480px) {
+  .outer-wrapper {
+    margin-top: 50vh;
+  }
 
   .block {
     padding: 40px 0;
   }
-
 }
 
 @import "components/navigation";
@@ -126,5 +150,6 @@ body {
 @import "sections/cover";
 @import "sections/intro";
 @import "sections/features";
+@import "sections/how-it-works";
 @import "sections/download";
 @import "sections/contact";

@@ -14,4 +14,23 @@
             .catch( res => { console.log('Can not find service worker.') } )
     }
 
+    /**
+     * Remove loader when page is fully loaded.
+     */
+    function removeLoader() {
+        const loader: HTMLElement = document.querySelector('.loader');
+        
+        if (loader) {
+            loader.classList.remove('loader-visible');
+            setTimeout(() => {
+                loader.style.zIndex = "-1";
+            }, 575);
+        }
+    }
+
+    window.addEventListener('load', ev => {
+        removeLoader();
+    });
+
+
 })()

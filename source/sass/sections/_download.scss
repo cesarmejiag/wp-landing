@@ -5,6 +5,9 @@
     Description:
 */
 .download {
+  padding: 120px 0;
+  position: relative;
+
   .header {
     h1 {
       color: #26d5dc;
@@ -47,6 +50,46 @@
       right: 0;
       top: 0;
       width: 55%;
+    }
+  }
+
+  .image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50%;
+
+    img {
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .download {
+    padding: 65px 0;
+    .image {
+      margin-left: auto;
+      margin-top: 45px;
+      position: relative;
+      right: auto;
+      transform: none;
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .download {
+    .header {
+      h1 {
+        font-size: 18px;
+      }
+    }
+
+    .content {
+      font-size: 15px;
     }
   }
 }

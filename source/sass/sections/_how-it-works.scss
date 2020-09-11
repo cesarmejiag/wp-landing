@@ -1,0 +1,43 @@
+/*
+    Document   : _how-it-works.scss
+    Created on : 10/06/2019, 22:49:15 PM
+    Author     : cesarmejia
+    Description:
+*/
+.how-it-works {
+  background: rgb(142, 241, 246);
+  background: linear-gradient(0deg, rgba(142, 241, 246, 1) 0%, rgba(193, 249, 251, 1) 100%);
+
+  .header {
+    text-align: center;
+
+    h1 {
+      font-size: 33px;
+      margin: 0;
+    }
+  }
+
+  .step {
+    align-items: flex-start;
+    display: flex;
+    font-size: 22px;
+
+    .number {
+      color: $highlight-color;
+      font-family: $font-highlight;
+      font-size: 65px;
+      line-height: 100%;
+    }
+
+    .wrapper {
+      margin-left: 15px;
+    }
+
+    h2 {
+      color: $highlight-color;
+      font-family: $font-bold;
+      font-size: 27px;
+      margin: 0 0;
+    }
+  }
+}
