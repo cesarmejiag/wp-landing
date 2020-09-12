@@ -127,6 +127,37 @@ body {
   }
 }
 
+// Inview effects
+.inview-bottom-top {
+  opacity: 0;
+  transform: translate(0, 13%);
+  transition: opacity 750ms, transform 750ms;
+  &.apply-inview {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.inview-left-right {
+  opacity: 0;
+  transform: translate(-5%, 0);
+  transition: opacity 750ms, transform 750ms;
+  &.apply-inview {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.inview-right-left {
+  opacity: 0;
+  transform: translate(5%, 0);
+  transition: opacity 750ms, transform 750ms;
+  &.apply-inview {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .outer-wrapper {
     margin-top: 65vh;

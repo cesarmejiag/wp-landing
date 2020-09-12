@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "HTML5 boilerplate.",
   "main": "",
-  "dependencies": {},
+  "dependencies": {
+    "@types/jquery": "^3.5.1"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
