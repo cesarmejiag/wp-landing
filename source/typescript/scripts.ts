@@ -105,8 +105,8 @@
         const elements = document.querySelectorAll('[class*=inview]');
         [].forEach.call(elements, element => {
             const settings = {
-                method: 'markerOver',
-                markerPercentage: 55,
+                method: 'inRange',
+                // markerPercentage: 55,
                 rangeMin: 10,
                 rangeMax: 90
             };

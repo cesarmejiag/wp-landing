@@ -7,8 +7,7 @@ $post_data = json_decode($_POST['data'], true);
 
 
 // Configure mail.
-$to      = "iconfidence@gmail.com";
-// $to      = "hola@wiskipix.com";
+$to      = "hola@wiskipix.mx";
 $subject = "Mensaje de wiskipix.mx";
 $message = "";
 
